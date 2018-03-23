@@ -12,14 +12,14 @@ class NewVisitorTest(unittest.TestCase):
         time.sleep(10)
         self.browser.quit()
 
-    def test_todo_list(self):
+    def test_online_todo_list(self):
         # Edith has heard about a cool new online to-do app. She goes
         # to check out its homepage
         self.browser.get('http://localhost:8000')
 
         # She notices the page title and header mention to-do lists
-        # self.assertIn('To-Do', self.browser.title)
-        self.assertIn('Django', self.browser.title)
+        # self.assertIn('Django', self.browser.title)
+        self.assertIn('To-Do', self.browser.title)
         self.fail('Finish test!')
 
         # She is invited to enter a to-do item straight away
