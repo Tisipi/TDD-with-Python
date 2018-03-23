@@ -1,7 +1,7 @@
 # TTD-with-Python
 Test-Driven Development with Python
 
-I use this repository while reading the book *Test-Driven Development with Python*, 2nd Edition, by *Harry J.W. Percival*.
+I use this repository while reading the book **Test-Driven Development with Python**, 2nd Edition, by **Harry J.W. Percival**.
 
 
 ## Reminders
@@ -10,7 +10,7 @@ Installed *geckodriver.exe* in Python36-32\Scripts directory.
 Created python *virtualenv* in directory python-tdd-book:
 - To activate virtualenv (windows):  
   virtualenv\Scripts\activate  
-- To deactivate virtualenv:
+- To deactivate virtualenv:  
   deactivate  
 
 Installed *Django* and *Selenium* in virtualenv:  
