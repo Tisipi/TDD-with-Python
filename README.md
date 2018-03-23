@@ -5,8 +5,8 @@ I use this repository while reading the book "Test-Driven Development with Pytho
 
 
 ## Reminders
-Installed geckodriver.exe in Python36-32\Scripts directory.
-Created python virtualenv in directory python-tdd-book.
+Installed geckodriver.exe in Python36-32\Scripts directory.  
+Created python virtualenv in directory python-tdd-book.  
     To activate it (windows):
         virtualenv\Scripts\activate
     To deactivate it:
