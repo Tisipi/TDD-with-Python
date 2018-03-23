@@ -11,7 +11,7 @@ Created python virtualenv in directory python-tdd-book.
         virtualenv\Scripts\activate  
     To deactivate it:  
         deactivate  
-Installed Django and Selenium in virtualenv:  
+Installed *Django* and **Selenium** in virtualenv:  
     pip install "django<1.12" "selenium<4"  
 Created a Django project (note the "."):  
     python virtualenv\Scripts\django-admin.py startproject superlists .  
