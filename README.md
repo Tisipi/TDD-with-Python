@@ -17,18 +17,8 @@ Create python *virtualenv* in directory python-tdd-book:
 - To deactivate virtualenv:  
   deactivate  
 
-Install *Django* and *Selenium* in virtualenv:  
->pip install "django<1.12" "selenium<4"
-
-Create a Django project (note the "." at the end):  
->python virtualenv\Scripts\django-admin.py startproject superlists .
-
-To run Django’s development server:  
->python manage.py runserver  
-
-
 ### Linux Mint Installation
-Install geckodriver in /usr/local/bin
+Install geckodriver in /usr/local/bin.
 
 Create python *virtualenv* in directory python-tdd-book:
 - sudo apt-get install python3-venv
@@ -37,3 +27,16 @@ Create python *virtualenv* in directory python-tdd-book:
   source virtualenv/bin/activate
 - To deactivate virtualenv:  
   deactivate  
+
+
+### Selenium and Django
+
+Install *Django* and *Selenium* in virtualenv:  
+>pip install "django<1.12" "selenium<4"
+
+Create a Django project (note the "." at the end):  
+>python virtualenv\Scripts\django-admin.py startproject superlists . (on windows)
+>django-admin.py startproject superlists . (on Linux)
+
+To run Django’s development server:  
+>python manage.py runserver  
