@@ -22,7 +22,7 @@ Install geckodriver in /usr/local/bin.
 
 Create python *virtualenv* in directory python-tdd-book:
 - sudo apt-get install python3-venv
-- python3 -m venv virtualenv
+- python3.6 -m venv virtualenv
 - To activate virtualenv:  
   source virtualenv/bin/activate
 - To deactivate virtualenv:  
@@ -34,8 +34,14 @@ Create python *virtualenv* in directory python-tdd-book:
 Install *Django* and *Selenium* in virtualenv:  
 >pip install "django<1.12" "selenium<4"
 
+In case of problems install specific versions used in book:
+>pip install django==1.11.3
+
+>pip install selenium==3.9.0
+
 Create a Django project (note the "." at the end):  
 >python virtualenv\Scripts\django-admin.py startproject superlists . (on windows)
+
 >django-admin.py startproject superlists . (on Linux)
 
 To run Django’s development server:  
