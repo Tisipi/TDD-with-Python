@@ -1,14 +1,18 @@
 # TTD-with-Python
 Test-Driven Development with Python
 
-I use this repository while reading the book **Test-Driven Development with Python**, 2nd Edition, by **Harry J.W. Percival**.
+I used this repository while reading the book **Test-Driven Development with Python**, 2nd Edition, by **Harry J.W. Percival**.
 
 
-## Notes/Help  
+## Notes/Help
+
+### Windows 10 Installation
 Install *geckodriver.exe* in Python36-32\Scripts directory.
 
 Create python *virtualenv* in directory python-tdd-book:
-- To activate virtualenv (windows):  
+- pip install virtualenv
+- py -3.6 -m venv virtualenv
+- To activate virtualenv:  
   virtualenv\Scripts\activate  
 - To deactivate virtualenv:  
   deactivate  
@@ -22,3 +26,14 @@ Create a Django project (note the "." at the end):
 To run Django’s development server:  
 >python manage.py runserver  
 
+
+### Linux Mint Installation
+Install geckodriver in /usr/local/bin
+
+Create python *virtualenv* in directory python-tdd-book:
+- sudo apt-get install python3-venv
+- python3 -m venv virtualenv
+- To activate virtualenv:  
+  source virtualenv/bin/activate
+- To deactivate virtualenv:  
+  deactivate  
