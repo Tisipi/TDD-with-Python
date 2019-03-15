@@ -12,10 +12,10 @@ Install *geckodriver.exe* in Python36-32\Scripts directory.
 Create python *virtualenv* in directory python-tdd-book:
 - pip install virtualenv
 - py -3.6 -m venv virtualenv
-- To activate virtualenv:  
-  virtualenv\Scripts\activate  
-- To deactivate virtualenv:  
-  deactivate  
+- To activate virtualenv:
+  virtualenv\Scripts\activate
+- To deactivate virtualenv:
+  deactivate
 
 ### Linux Mint Installation
 Install geckodriver in /usr/local/bin.
@@ -23,15 +23,15 @@ Install geckodriver in /usr/local/bin.
 Create python *virtualenv* in directory python-tdd-book:
 - sudo apt-get install python3-venv
 - python3.6 -m venv virtualenv
-- To activate virtualenv:  
+- To activate virtualenv:
   source virtualenv/bin/activate
-- To deactivate virtualenv:  
-  deactivate  
+- To deactivate virtualenv:
+  deactivate
 
 
 ### Selenium and Django
 
-Install *Django* and *Selenium* in virtualenv:  
+Install *Django* and *Selenium* in virtualenv:
 >pip install "django<1.12" "selenium<4"
 
 In case of problems install specific versions used in book:
@@ -39,10 +39,20 @@ In case of problems install specific versions used in book:
 
 >pip install selenium==3.9.0
 
-Create a Django project (note the "." at the end):  
+Create a Django project (note the "." at the end):
 >python virtualenv\Scripts\django-admin.py startproject superlists . (on windows)
 
 >django-admin.py startproject superlists . (on Linux)
 
-To run Django’s development server:  
->python manage.py runserver  
+To run Django’s development server:
+>python manage.py runserver
+
+
+### Django App
+
+Start an App:
+>python manage.py startapp lists
+
+Invoke Django test runner:
+>python manage.py test
+
