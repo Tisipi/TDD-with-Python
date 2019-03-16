@@ -4,9 +4,7 @@ Test-Driven Development with Python
 I used this repository while reading the book **Test-Driven Development with Python**, 2nd Edition, by **Harry J.W. Percival**.
 
 
-## Notes/Help
-
-### Windows 10 Installation
+## Windows 10 Installation
 Install *geckodriver.exe* in Python36-32\Scripts directory.
 
 Create python *virtualenv* in directory python-tdd-book:
@@ -17,7 +15,7 @@ Create python *virtualenv* in directory python-tdd-book:
 - To deactivate virtualenv:
   deactivate
 
-### Linux Mint Installation
+## Linux Mint Installation
 Install geckodriver in /usr/local/bin.
 
 Create python *virtualenv* in directory python-tdd-book:
@@ -29,7 +27,7 @@ Create python *virtualenv* in directory python-tdd-book:
   deactivate
 
 
-### Selenium and Django
+## Selenium and Django
 
 Install *Django* and *Selenium* in virtualenv:
 >pip install "django<1.12" "selenium<4"
@@ -48,7 +46,7 @@ To run Django’s development server:
 >python manage.py runserver
 
 
-### Django App
+## Django App
 
 Start an App:
 >python manage.py startapp lists
