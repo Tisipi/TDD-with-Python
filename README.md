@@ -48,8 +48,15 @@ To run Django’s development server:
 
 ## Django App
 
-Start an App:
+Start an App called "lists":
 >python manage.py startapp lists
+
+Don't forget to register the lists App in superlists/settings.py:
+
+INSTALLED_APPS = [
+	...
+    'lists',
+]
 
 Invoke Django test runner:
 >python manage.py test
