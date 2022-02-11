@@ -1,7 +1,7 @@
 # TTD-with-Python
 Test-Driven Development with Python
 
-I used this repository while reading the book [**Test-Driven Development with Python**(https://learning.oreilly.com/library/view/test-driven-development-with/9781491958698/), 2nd Edition, by **Harry J.W. Percival**.
+I used this repository while reading the book [**Test-Driven Development with Python**](https://learning.oreilly.com/library/view/test-driven-development-with/9781491958698/), 2nd Edition, by **Harry J.W. Percival**.
 
 
 ## Windows 10 Installation
@@ -11,10 +11,12 @@ Create python *virtualenv* in directory python-tdd-book:
 ```
 pip install virtualenv
 py -3.6 -m venv virtualenv
+
 # To activate virtualenv:
-  virtualenv\Scripts\activate
-#To deactivate virtualenv:
-  deactivate
+virtualenv\Scripts\activate
+
+# To deactivate virtualenv:
+deactivate
 ```
 
 ## Linux Mint Installation
@@ -24,10 +26,12 @@ Create python *virtualenv* in directory python-tdd-book:
 ```
 sudo apt-get install python3-venv
 python3.6 -m venv virtualenv
+
 # To activate virtualenv:
-  source virtualenv/bin/activate
+source virtualenv/bin/activate
+
 #To deactivate virtualenv:
-  deactivate
+deactivate
 ```
 
 ## Selenium and Django
@@ -49,13 +53,13 @@ django-admin.py startproject superlists . (on Linux)
 ```
 
 To run Django’s development server:
-`python manage.py runserver
+`python manage.py runserver`
 
 
 ## Django App
 
 Start an App called "lists":
-`python manage.py startapp lists
+`python manage.py startapp lists`
 
 Don't forget to register the lists App in superlists/settings.py:
 ```
@@ -66,5 +70,5 @@ INSTALLED_APPS = [
 ```
 
 Invoke Django test runner:
-`python manage.py test
+`python manage.py test`
 
