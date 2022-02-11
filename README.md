@@ -30,7 +30,9 @@ Create python *virtualenv* in directory python-tdd-book:
 ## Selenium and Django
 
 Install *Django* and *Selenium* in virtualenv:
->pip install "django<1.12" "selenium<4"
+```
+pip install "django<1.12" "selenium<4"
+```
 
 In case of problems install specific versions used in book:
 >pip install django==1.11.3
