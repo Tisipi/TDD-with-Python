@@ -35,10 +35,10 @@ pip install "django<1.12" "selenium<4"
 ```
 
 In case of problems install specific versions used in book:
->pip install django==1.11.3
-
->pip install selenium==3.9.0
-
+```
+pip install django==1.11.3
+pip install selenium==3.9.0
+```
 Create a Django project (note the "." at the end):
 >python virtualenv\Scripts\django-admin.py startproject superlists . (on windows)
 
