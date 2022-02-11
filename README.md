@@ -1,7 +1,7 @@
 # TTD-with-Python
 Test-Driven Development with Python
 
-I used this repository while reading the book [**Test-Driven Development with Python**](https://learning.oreilly.com/library/view/test-driven-development-with/9781491958698/), 2nd Edition, by **Harry J.W. Percival**.
+I used this repository while reading the book [Test-Driven Development with Python](https://learning.oreilly.com/library/view/test-driven-development-with/9781491958698/), 2nd Edition, by **Harry J.W. Percival**.
 
 
 ## Windows 10 Installation
@@ -53,12 +53,14 @@ django-admin.py startproject superlists . (on Linux)
 ```
 
 To run Django’s development server:
-`python manage.py runserver`
+```
+python manage.py runserver
+```
 
 
 ## Django App
 
-Start an App called "lists":
+Start an App called "lists":  
 `python manage.py startapp lists`
 
 Don't forget to register the lists App in superlists/settings.py:
@@ -69,6 +71,6 @@ INSTALLED_APPS = [
 ]
 ```
 
-Invoke Django test runner:
+Invoke Django test runner:  
 `python manage.py test`
 
