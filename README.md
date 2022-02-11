@@ -2,6 +2,8 @@
 
 I used this repository while reading the book [Test-Driven Development with Python](https://learning.oreilly.com/library/view/test-driven-development-with/9781491958698/), 2nd Edition, by **Harry J.W. Percival**.
 
+If you need help with Django take a look at the [Django Girls tutorial](https://tutorial.djangogirls.org/en/) or the official v1.11 [tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+
 
 ## Windows 10 Installation
 Install *geckodriver.exe* in Python36-32\Scripts directory.
