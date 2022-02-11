@@ -46,16 +46,17 @@ In case of problems install specific versions used in book:
 pip install django==1.11.3
 pip install selenium==3.9.0
 ```
+
 Create a Django project (note the "." at the end):
 ```
-python virtualenv\Scripts\django-admin.py startproject superlists . (on windows)
-django-admin.py startproject superlists . (on Linux)
+# On windows:
+python virtualenv\Scripts\django-admin.py startproject superlists .
+# On Linux:
+django-admin.py startproject superlists .
 ```
 
-To run Django’s development server:
-```
-python manage.py runserver
-```
+To run Django’s development server:  
+`python manage.py runserver`
 
 
 ## Django App
