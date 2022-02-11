@@ -1,5 +1,4 @@
 # TTD-with-Python
-Test-Driven Development with Python
 
 I used this repository while reading the book [Test-Driven Development with Python](https://learning.oreilly.com/library/view/test-driven-development-with/9781491958698/), 2nd Edition, by **Harry J.W. Percival**.
 
