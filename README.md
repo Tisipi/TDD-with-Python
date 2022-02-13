@@ -63,7 +63,7 @@ To run Django’s development server:
 Import error when using Python 3.10.2:  
 ImportError: cannot import name 'Iterator' from 'collections' (/usr/lib/python3.10/collections/__init__.py)  
 
-Workaround: Use older version like Python 3.6.  
+Workaround is to use an older version like Python 3.6:  
 - Install python3.6  
 - Install *virtualenv* which allows to specify a specific python version in your virtual environment:  
 `pip install virtualenv`  
