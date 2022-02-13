@@ -64,11 +64,11 @@ To run Django’s development server:
 > ImportError: cannot import name 'Iterator' from 'collections' (/usr/lib/python3.10/collections/__init__.py)  
 >
 > Workaround: Use older version like Python 3.6.  
-    > Install python3.6  
-    > Install *virtualenv* which allows to specify a specific python version in your virtual environment:  
-        > pip install virtualenv  
-    > Create virtual environment with Python 3.6:  
-        > virtualenv virtualenv -p python3.6  
+        > Install python3.6  
+        > Install *virtualenv* which allows to specify a specific python version in your virtual environment:  
+            > pip install virtualenv  
+        > Create virtual environment with Python 3.6:  
+            > virtualenv virtualenv -p python3.6  
 
 
 ## Django App
