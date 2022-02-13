@@ -2,7 +2,7 @@
 
 I used this repository while reading the book [Test-Driven Development with Python](https://learning.oreilly.com/library/view/test-driven-development-with/9781491958698/), 2nd Edition, by **Harry J.W. Percival**.
 
-If you need help with Django take a look at the [Django Girls tutorial](https://tutorial.djangogirls.org/en/) or the official v1.11 [tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+If you need help with Django take a look at the [Django Girls tutorial](https://tutorial.djangogirls.org/en/) or the official v1.11 [tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/).
 
 
 ## Windows 10 Installation
@@ -57,7 +57,19 @@ django-admin.py startproject superlists .
 ```
 
 To run Django’s development server:  
-`python manage.py runserver`
+`python manage.py runserver`    
+
+> **Update 2022**:  
+> Import error when using Python 3.10.2:
+> ImportError: cannot import name 'Iterator' from 'collections' (/usr/lib/python3.10/collections/__init__.py)
+>
+> Workaround: Use older version like Python 3.6.
+> Install python3.6
+> Install *virtualenv* which allows to specify a specific python version in your virtual environment:
+    > pip install virtualenv
+> Create virtual environment with Python 3.6:
+    > virtualenv virtualenv -p python3.6
+
 
 
 ## Django App
