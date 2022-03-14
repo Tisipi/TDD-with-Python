@@ -17,10 +17,13 @@ Including another URLconf
 
 from django.conf.urls import url
 from lists import views
+
 # from django.contrib import admin
 
 
 urlpatterns = [
     # url(r'^admin/', admin.site.urls),
-    url(r'^$', views.home_page, name='home')
+    #
+    # Map root URL to home_page
+    url(r"^$", views.home_page, name="home")
 ]
