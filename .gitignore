@@ -1,7 +1,9 @@
 db.sqlite3
 geckodriver.log
 virtualenv
+.vscode
 python-tdd-book.sublime-project
 python-tdd-book.sublime-workspace
+*.backup
 __pycache__
 *.pyc
