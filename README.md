@@ -87,3 +87,10 @@ INSTALLED_APPS = [
 Invoke Django test runner (to run unit tests):  
 `python manage.py test`
 
+
+## Django Migration
+When you change something in the Django model (for example changing or adding a field), the database tables that store these models need to be changed too. A Django migration propagates these changes in the model into the database schema.
+
+```
+python manage.py makemigrations
+```
