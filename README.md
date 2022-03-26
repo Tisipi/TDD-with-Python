@@ -99,27 +99,28 @@ python manage.py makemigrations
 
 ## Overview Files
 
-├── db.sqlite3
-├── functional_tests.py           <<< Functional tests
-├── geckodriver.log
-├── lists                         <<< Directory of lists App
-│   ├── admin.py
-│   ├── apps.py
-│   ├── __init__.py
-│   ├── migrations                <<< Directory containing Django migrations
-│   ├── models.py                 <<< Django models
-│   ├── templates                 <<< HTML template directory
-│   ├── tests.py                  <<< Unittests of lists App
-│   └── views.py                  <<< Django views
-├── manage.py                     <<< Django's management script
-├── README.md
-├── superlists                    <<< Django's main project directory
-│   ├── __init__.py
-│   ├── settings.py               <<< register the lists App
-│   ├── urls.py                   <<< URL patterns mapping URLs to views
-│   └── wsgi.py
-└── virtualenv
-    ├── bin
-    ├── lib
-    ├── pyvenv.cfg
-    └── selenium
+├── db.sqlite3  
+├── functional_tests.py           <<< Functional tests  
+├── geckodriver.log  
+├── lists                         <<< Directory of lists App  
+│   ├── admin.py  
+│   ├── apps.py  
+│   ├── __init__.py  
+│   ├── migrations                <<< Directory containing Django migrations  
+│   ├── models.py                 <<< Django models  
+│   ├── templates                 <<< HTML template directory  
+│   ├── tests.py                  <<< Unittests of lists App  
+│   └── views.py                  <<< Django views  
+├── manage.py                     <<< Django's management script  
+├── README.md  
+├── superlists                    <<< Django's main project directory  
+│   ├── __init__.py  
+│   ├── settings.py               <<< register the lists App  
+│   ├── urls.py                   <<< URL patterns mapping URLs to views  
+│   └── wsgi.py  
+└── virtualenv  
+    ├── bin  
+    ├── lib  
+    ├── pyvenv.cfg  
+    └── selenium  
+    
