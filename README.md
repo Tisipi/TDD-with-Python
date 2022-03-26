@@ -86,11 +86,40 @@ INSTALLED_APPS = [
 
 Invoke Django test runner (to run unit tests):  
 `python manage.py test`
+You can also add the App name:
+`python manage.py test lists`
 
 
 ## Django Migration
-When you change something in the Django model (for example changing or adding a field), the database tables that store these models need to be changed too. A Django migration propagates these changes in the model into the database schema.
+When you change something in the Django model (for example change or add a field), the database tables that store these models need to be changed too. A Django migration propagates these changes in the model into the database schema.
 
 ```
 python manage.py makemigrations
 ```
+
+## Overview Files
+
+├── db.sqlite3
+├── functional_tests.py           <<< Functional tests
+├── geckodriver.log
+├── lists                         <<< Directory of lists App
+│   ├── admin.py
+│   ├── apps.py
+│   ├── __init__.py
+│   ├── migrations                <<< Directory containing Django migrations
+│   ├── models.py                 <<< Django models
+│   ├── templates                 <<< HTML template directory
+│   ├── tests.py                  <<< Unittests of lists App
+│   └── views.py                  <<< Django views
+├── manage.py                     <<< Django's management script
+├── README.md
+├── superlists                    <<< Django's main project directory
+│   ├── __init__.py
+│   ├── settings.py               <<< register the lists App
+│   ├── urls.py                   <<< URL patterns mapping URLs to views
+│   └── wsgi.py
+└── virtualenv
+    ├── bin
+    ├── lib
+    ├── pyvenv.cfg
+    └── selenium
