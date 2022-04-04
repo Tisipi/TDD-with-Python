@@ -97,6 +97,12 @@ When you change something in the Django model (for example change or add a field
 python manage.py makemigrations
 ```
 
+## Django Database Creation
+Actually create the database after the Django migration.
+```
+python manage.py migrate
+```
+
 ## Overview Files
 
 ├── db.sqlite3  
