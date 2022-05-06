@@ -103,6 +103,21 @@ Actually create the database after the Django migration.
 python manage.py migrate
 ```
 
+The default database is SQLite. It is just a file located in your base directory:
+```
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.sqlite3",
+            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
+        }
+    }
+```
+You can delete it manually and recreate it:
+```
+rm db.sqlite3
+python manage.py migrate --noinput
+```
+
 ## Overview Files
 
 ├── db.sqlite3  
