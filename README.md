@@ -103,7 +103,7 @@ Actually create the database after the Django migration.
 python manage.py migrate
 ```
 
-The default database is SQLite. It is just a file located in your base directory as can be seen in <your Django project>/settings.py::
+The default database is SQLite. It is just a file located in your base directory as can be seen in yourDjangoProject/settings.py::
 ```
 DATABASES = {
     "default": {
