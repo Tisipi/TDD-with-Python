@@ -2,7 +2,7 @@
 
 I used this repository while reading the book [Test-Driven Development with Python](https://learning.oreilly.com/library/view/test-driven-development-with/9781491958698/), 2nd Edition, by **Harry J.W. Percival**.
 
-If you need help with Django take a look at the [Django Girls tutorial](https://tutorial.djangogirls.org/en/) or the [official v1.11 tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/).
+If you need help with Django take a look at the [Django Girls tutorial](https://tutorial.djangogirls.org/en/) or the [official v1.11 tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/). Please note: This is an old **unsafe** version!
 
 
 ## Windows 10 Installation
@@ -48,7 +48,7 @@ pip install django==1.11.3
 pip install selenium==3.9.0
 ```
 
-Create a Django project (note the "." at the end):
+Create a Django project called superlists (note the "." at the end):
 ```
 # On windows:
 python virtualenv\Scripts\django-admin.py startproject superlists .
@@ -105,14 +105,15 @@ python manage.py migrate
 
 The default database is SQLite. It is just a file located in your base directory:
 ```
-    DATABASES = {
-        "default": {
-            "ENGINE": "django.db.backends.sqlite3",
-            "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
-        }
+<your Django project>/settings.py:
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": os.path.join(BASE_DIR, "db.sqlite3"),
     }
+}
 ```
-You can delete it manually and recreate it:
+You can simply delete and recreate it:
 ```
 rm db.sqlite3
 python manage.py migrate --noinput
