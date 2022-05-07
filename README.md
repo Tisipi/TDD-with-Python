@@ -99,10 +99,10 @@ class MyTest(TestCase):
         self.assertEqual(1 + 1, 2)
 ```
 
-To run unit tests invoke Django test runner:  
+To run all unit tests invoke Django test runner:  
 `python manage.py test`
 
-You can also add the App name:  
+To only run the unit tests of your App, in this case list, add the App name:  
 `python manage.py test lists`
 
 ### Django Functional Tests
@@ -118,7 +118,7 @@ class MyFunctionalTest(LiveServerTestCase):
         [...]
 ```
 
-To run functional tests:  
+To only run functional tests:  
 `python manage.py test functional_tests`  
 
 
