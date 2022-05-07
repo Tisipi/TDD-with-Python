@@ -118,7 +118,7 @@ class MyFunctionalTest(LiveServerTestCase):
         [...]
 ```
 
-To run functional tests:
+To run functional tests:  
 `python manage.py test functional_tests`
 
 
