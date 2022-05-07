@@ -101,6 +101,7 @@ class MyTest(TestCase):
 
 To run unit tests invoke Django test runner:  
 `python manage.py test`
+
 You can also add the App name:  
 `python manage.py test lists`
 
