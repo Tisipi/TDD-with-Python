@@ -89,19 +89,37 @@ INSTALLED_APPS = [
 
 ### Django Unit Tests
 
-Unit tests are defined in tests.py and are a subclass of TestCase:
+Unit tests are defined in tests.py in your list App directory.  
+Unit tests are a subclass of Django class TestCase:
 ```
 from django.test import TestCase
 
-class SmokeTest(TestCase):
-    def test_bad_maths(self):
+class MyTest(TestCase):
+    def test_good_maths(self):
         self.assertEqual(1 + 1, 2)
 ```
 
 To run unit tests invoke Django test runner:  
 `python manage.py test`
-You can also add the App name:
+You can also add the App name:  
 `python manage.py test lists`
+
+### Django Functional Tests
+Functional tests are defined in file tests.py in App directory functional_tests. 
+Functional tests are a subclass of Django class LiveServerTestCase:
+
+```
+from django.test import LiveServerTestCase
+
+class MyFunctionalTest(LiveServerTestCase):
+
+    def setUp(self):
+        [...]
+```
+
+To run functional tests:
+`python manage.py test functional_tests`
+
 
 
 ## Django Migration
