@@ -84,7 +84,21 @@ INSTALLED_APPS = [
 ]
 ```
 
-Invoke Django test runner (to run unit tests):  
+
+## Django Tests
+
+### Django Unit Tests
+
+Unit tests are defined in tests.py and are a subclass of TestCase:
+```
+from django.test import TestCase
+
+class SmokeTest(TestCase):
+    def test_bad_maths(self):
+        self.assertEqual(1 + 1, 2)
+```
+
+To run unit tests invoke Django test runner:  
 `python manage.py test`
 You can also add the App name:
 `python manage.py test lists`
@@ -103,7 +117,7 @@ Actually create the database after the Django migration.
 python manage.py migrate
 ```
 
-The default database is SQLite. It is just a file located in your base directory as can be seen in yourDjangoProject/settings.py::
+The default database is SQLite. It is just a file located in your base directory as can be seen in yourDjangoProjectDir/settings.py:
 ```
 DATABASES = {
     "default": {
@@ -119,9 +133,11 @@ python manage.py migrate --noinput
 ```
 
 ## Overview Files
-
+```
 ├── db.sqlite3  
-├── functional_tests.py           <<< Functional tests  
+├── functional_tests
+│   ├── functional_tests.py       <<< Functional tests
+│   └── __init__.py  
 ├── geckodriver.log  
 ├── lists                         <<< Directory of lists App  
 │   ├── admin.py  
@@ -144,4 +160,4 @@ python manage.py migrate --noinput
     ├── lib  
     ├── pyvenv.cfg  
     └── selenium  
-    
+```
