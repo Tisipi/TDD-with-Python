@@ -90,7 +90,7 @@ INSTALLED_APPS = [
 ### Django Unit Tests
 
 Unit tests are defined in tests.py in your list App directory.  
-Unit tests are a subclass of Django class TestCase:
+Unit tests are a subclass of Django class TestCase:  
 ```
 from django.test import TestCase
 
@@ -106,7 +106,7 @@ You can also add the App name:
 
 ### Django Functional Tests
 Functional tests are defined in file tests.py in App directory functional_tests. 
-Functional tests are a subclass of Django class LiveServerTestCase:
+Functional tests are a subclass of Django class LiveServerTestCase:  
 
 ```
 from django.test import LiveServerTestCase
